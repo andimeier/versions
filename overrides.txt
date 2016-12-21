@@ -1,0 +1,7 @@
+# list of files to be replaced by target-specific file during deployment
+# Usually, this contains config file which are different, depending on the
+# target system
+# Paths are relative to the installation directory on the target server.
+
+# config file
+config/config.js

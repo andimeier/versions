@@ -1,0 +1,3 @@
+# don't check in config files, will be deployed by build script
+config.js
+config.json

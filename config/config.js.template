@@ -1,0 +1,27 @@
+module.exports = {
+    "port": 3002,
+	"listenOn": "localhost",
+    "accessControlAllowOrigin": "http://frontend.server.com:9000",
+	"db": {
+		"host"     : "dbserver.com",
+		"user"     : "db_user",
+		"password" : "db_password_base64_encoded",
+		"database" : "db_name"
+	},
+         "sessionConf": {
+             secret: "OE2",
+             resave: true,
+             saveUninitialized: false
+         },
+         "casConf": {
+             // CAS service address
+             cas_url: "https://atvulicl9/cas-server",
+             // service address, under which the Flint backend is running
+             service_url: "http://atvulicl9/versions",
+             cas_version: "2.0",
+             renew: false,
+             session_name: "cas_user",
+             session_info: "cas_userinfo",
+             destroy_session: false
+         }
+}
